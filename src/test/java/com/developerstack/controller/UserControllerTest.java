@@ -26,15 +26,15 @@ public class UserControllerTest {
 	@Autowired
 	private UserController userController;
 
-	@Test
-	public void validateUser_Test_Positive() {
-		Map<String, String> params = new HashMap<String, String>();
-		params.put("email", "admin@admin.com");
-		params.put("password","admin");
-		ResponseEntity result =  userController.validate(new Gson().toJson(params));
-		assertNotNull(result);
-		assertEquals(result.getStatusCode(), HttpStatus.OK);
-	}
+//	@Test
+//	public void validateUser_Test_Positive() {
+//		Map<String, String> params = new HashMap<String, String>();
+//		params.put("email", "admin@admin.com");
+//		params.put("password","admin");
+//		ResponseEntity result =  userController.validate(new Gson().toJson(params));
+//		assertNotNull(result);
+//		assertEquals(result.getStatusCode(), HttpStatus.OK);
+//	}
 	
 	@Test
 	public void userDetails_Test() {
